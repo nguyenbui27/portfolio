@@ -1,0 +1,195 @@
+{
+  "name": "Thao Nguyen Bui",
+  "title": "Full-Stack Software Engineer",
+  "location": "San Francisco, CA",
+  "email": "nguyenthaobui04@gmail.com",
+  "phone": "+1 (765) 615-8452",
+  "linkedin": "http://www.linkedin.com/in/nguyenthaobui04",
+  "github": "https://github.com/nguyenbui27",
+  "resume": "./resume-thao-nguyen-bui.pdf",
+  "photo": "./thao-nguyen-bui-photo.jpg",
+  "hero": {
+    "eyebrow": "Open to SWE internships and new-grad roles",
+    "headline": "Full-stack engineer building mobile, backend, and AI-powered systems.",
+    "summary": "Computer Science and Mathematics student at DePauw University with hands-on experience across React Native, TypeScript, Node APIs, Java Spring Boot, Oracle SQL, cloud tooling, and automation workflows."
+  },
+  "about": {
+    "intro": "I am a Computer Science and Mathematics student who likes building across the full stack: mobile interfaces, backend APIs, database workflows, and AI-assisted product features.",
+    "details": [
+      "At VietinBank, I worked on Spring Boot and Oracle SQL modules for transaction validation, account lookup, authentication, reporting, and Python automation.",
+      "For KITES, I built a React Native and TypeScript safety app with parent/child roles, location tracking, push notifications, real-time messaging, and a Gemini-powered assistant.",
+      "I bring a math-heavy problem-solving background, debugging experience as a technical lab assistant, and a practical bias toward systems that are useful to real users."
+    ]
+  },
+  "metrics": [
+    { "value": "3.82", "label": "GPA, CS + Mathematics" },
+    { "value": "35%", "label": "faster data retrieval at VietinBank" },
+    { "value": "80%", "label": "less manual review via Python + SQL automation" },
+    { "value": "200+", "label": "users supported in education platforms" }
+  ],
+  "education": {
+    "school": "DePauw University",
+    "degree": "B.A. in Computer Science and Mathematics",
+    "graduation": "May 2026",
+    "honors": [
+      "2nd Place, Indiana Collegiate Mathematics Competition",
+      "WiCyS 2025 Conference Scholarship Recipient",
+      "Dean's List Honors"
+    ],
+    "coursework": [
+      "Object-Oriented Programming",
+      "Data Structures & Algorithms",
+      "Database and File Systems",
+      "Computer Systems",
+      "Mobile Development",
+      "Statistical Computing",
+      "Linear Algebra",
+      "Numerical Analysis"
+    ]
+  },
+  "projects": [
+    {
+      "name": "KITES",
+      "type": "Mobile + Backend + AI",
+      "status": "Senior project",
+      "link": "https://github.com/nguyenbui27/KITESseniorproject",
+      "summary": "Native Android child-safety platform with parent/child roles, persistent sessions, live location, messaging, SOS alerts, and an embedded Gemini assistant.",
+      "impact": [
+        "Built role-based navigation and authentication for parent and child flows.",
+        "Implemented Socket.IO/STOMP-style real-time communication, push alerts, battery-level monitoring, and image sharing.",
+        "Designed an AI assistant flow with Gemini prompt handling and multi-turn conversation context."
+      ],
+      "stack": [
+        "React Native",
+        "TypeScript",
+        "Node.js",
+        "Firebase Cloud Messaging",
+        "Socket.IO",
+        "WebSocket",
+        "Google Maps SDK",
+        "Gemini API",
+        "Recoil",
+        "Axios",
+        "AsyncStorage"
+      ],
+      "accent": "rose"
+    },
+    {
+      "name": "VietinBank Internal APIs",
+      "type": "Enterprise Backend",
+      "status": "Internship",
+      "link": "#experience",
+      "summary": "Transaction-validation, account lookup, authentication, and reporting APIs for internal financial dashboards.",
+      "impact": [
+        "Implemented Java Spring Boot modules backed by Oracle SQL for transaction and account workflows.",
+        "Automated daily financial checks with Python and SQL, reducing manual review workload by about 80%.",
+        "Cut recurring report generation time by 40% for operations teams."
+      ],
+      "stack": [
+        "Java",
+        "Spring Boot",
+        "Oracle SQL",
+        "Python",
+        "REST APIs",
+        "Secure Auth",
+        "Financial Data"
+      ],
+      "accent": "green"
+    },
+    {
+      "name": "Space Station Rescue Simulator",
+      "type": "Simulation + Game Systems",
+      "status": "Course project",
+      "link": "#projects",
+      "summary": "2D orbital rescue simulator with moving objects, space stations, collision detection, and modular mission logic.",
+      "impact": [
+        "Built Java Swing/AWT rendering and controls for 5+ stations and 20+ moving objects.",
+        "Used spatial hashing to improve debris interaction performance by about 30%.",
+        "Applied Command and State patterns to simplify level integration."
+      ],
+      "stack": [
+        "Java",
+        "Swing",
+        "AWT",
+        "Spatial Hashing",
+        "Command Pattern",
+        "State Pattern"
+      ],
+      "accent": "blue"
+    },
+    {
+      "name": "AI Chatbot",
+      "type": "LLM Frontend",
+      "status": "Independent project",
+      "link": "#projects",
+      "summary": "Browser-based chatbot with asynchronous Gemini calls, prompt handling, session state, loading feedback, and responsive chat UI.",
+      "impact": [
+        "Implemented multi-turn message handling and context-aware session flow.",
+        "Designed loading, error, and response rendering states for a smoother chat experience.",
+        "Built the UI with vanilla HTML, CSS, and JavaScript for direct browser portability."
+      ],
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Gemini API",
+        "Async API Calls",
+        "Prompt Engineering"
+      ],
+      "accent": "amber"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Technical Chief of Staff Fellow",
+      "company": "Pay Your Tuition Foundation",
+      "dates": "Aug 2025 - Dec 2025",
+      "details": [
+        "Coordinated workflows across Salesforce, Webflow, and Make, automating 12+ approval and validation steps.",
+        "Integrated Salesforce CRM with internal databases through APIs to keep data consistent across three automation tools.",
+        "Worked with Microsoft and IBM partners to troubleshoot API connections and standardize integration workflows."
+      ],
+      "stack": ["Salesforce", "Webflow", "Make", "APIs", "Automation", "CRM"]
+    },
+    {
+      "role": "Software Engineer Intern",
+      "company": "VietinBank",
+      "dates": "May 2025 - Aug 2025",
+      "details": [
+        "Implemented transaction-validation and account-lookup modules in Java Spring Boot with Oracle SQL.",
+        "Automated financial checks with Python and SQL for 50+ daily records.",
+        "Developed authentication and reporting APIs for internal dashboard data retrieval."
+      ],
+      "stack": ["Java", "Spring Boot", "Oracle SQL", "Python", "REST APIs"]
+    },
+    {
+      "role": "Technical Lab Assistant",
+      "company": "DePauw University",
+      "dates": "Feb 2025 - May 2025",
+      "details": [
+        "Provided 1:1 debugging support for syntax, logic, and runtime errors.",
+        "Participated in code reviews and helped resolve critical bugs for better project stability.",
+        "Supported students in completing programming assignments on time."
+      ],
+      "stack": ["Debugging", "Code Review", "Teaching", "Data Structures"]
+    },
+    {
+      "role": "Software Engineer Intern",
+      "company": "Khoi Nguyen Academy",
+      "dates": "May 2024 - Aug 2024",
+      "details": [
+        "Built responsive educational platform features with HTML, CSS, and JavaScript.",
+        "Improved accessibility and student/instructor user experience.",
+        "Implemented real-time homework and exam updates for 200+ users."
+      ],
+      "stack": ["HTML", "CSS", "JavaScript", "Accessibility", "Realtime Updates"]
+    }
+  ],
+  "skills": {
+    "Languages": ["Java", "Python", "C++", "JavaScript", "TypeScript", "SQL", "R", "HTML/CSS"],
+    "Frontend + Mobile": ["React", "React Native", "React Navigation", "Recoil", "Axios", "Responsive UI", "Accessibility"],
+    "Backend + Data": ["Node.js", "Express.js", "Spring Boot", "REST APIs", "WebSocket", "MongoDB", "PostgreSQL", "Oracle SQL", "Drizzle ORM"],
+    "Cloud + Tools": ["Git", "GitHub", "Firebase Cloud Messaging", "AWS", "Google Cloud Platform", "Salesforce", "Webflow", "Docker-ready workflows", "Linux/Unix"],
+    "AI + Analytics": ["Gemini API", "Prompt Engineering", "TensorFlow", "Tableau", "Excel", "Statistical Computing"]
+  }
+}

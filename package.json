@@ -1,0 +1,14 @@
+{
+  "name": "thao-fullstack-portfolio",
+  "version": "1.0.0",
+  "description": "Full-stack portfolio for Thao Nguyen Bui, built to run locally in VS Code with a Node API and browser frontend.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
