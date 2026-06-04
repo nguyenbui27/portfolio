@@ -11,25 +11,42 @@ function tagList(items) {
   return items.map(item => `<span class="tag">${item}</span>`).join("");
 }
 
-function metricCards(metrics) {
-  return metrics.map(metric => `
-    <article class="metric">
-      <strong>${metric.value}</strong>
-      <span>${metric.label}</span>
-    </article>
-  `).join("");
+function projectVisual(project) {
+  if (project.media?.type === "video") {
+    return `
+      <div class="project-visual media ${project.accent}">
+        <video src="${project.media.src}" autoplay muted loop playsinline preload="metadata"></video>
+      </div>
+    `;
+  }
+
+  return `
+    <div class="project-visual ${project.accent}">
+      <div class="visual-code">
+        <span>${iconMap[project.accent] || "APP"}</span>
+        <i></i><i></i><i></i>
+      </div>
+      <div class="visual-orbit"></div>
+    </div>
+  `;
+}
+
+function projectLinks(project) {
+  const links = [
+    `<a class="text-link" href="${project.link}" target="${project.link.startsWith("http") ? "_blank" : "_self"}" rel="noreferrer">View context -></a>`
+  ];
+
+  if (project.paper) {
+    links.push(`<a class="text-link" href="${project.paper}" target="_blank" rel="noreferrer">Read paper -></a>`);
+  }
+
+  return `<div class="project-links">${links.join("")}</div>`;
 }
 
 function projectCard(project) {
   return `
     <article class="project-card" data-project-card data-type="${project.type.toLowerCase()}">
-      <div class="project-visual ${project.accent}">
-        <div class="visual-code">
-          <span>${iconMap[project.accent] || "APP"}</span>
-          <i></i><i></i><i></i>
-        </div>
-        <div class="visual-orbit"></div>
-      </div>
+      ${projectVisual(project)}
       <div class="project-body">
         <div class="project-meta">
           <span>${project.type}</span>
@@ -41,7 +58,7 @@ function projectCard(project) {
           ${project.impact.map(item => `<li>${item}</li>`).join("")}
         </ul>
         <div class="tags">${tagList(project.stack)}</div>
-        <a class="text-link" href="${project.link}" target="${project.link.startsWith("http") ? "_blank" : "_self"}" rel="noreferrer">View context -></a>
+        ${projectLinks(project)}
       </div>
     </article>
   `;
@@ -74,14 +91,14 @@ function skillColumn([group, skills]) {
 
 function render(profile) {
   app.innerHTML = `
-    <header id="home" class="hero">
+    <header id="home" class="hero" data-nav-section>
       <div class="shell hero-grid">
         <section class="hero-copy">
           <p class="eyebrow">${profile.hero.eyebrow}</p>
           <h1>${profile.hero.headline}</h1>
           <p class="lede">${profile.hero.summary}</p>
           <div class="hero-actions">
-            <a class="button primary" href="mailto:${profile.email}">Email Thao -></a>
+            <a class="button primary" href="mailto:${profile.email}">Email Nguyen -></a>
             <a class="button" href="${profile.github}" target="_blank" rel="noreferrer">GitHub -></a>
             <a class="button quiet" href="${profile.linkedin}" target="_blank" rel="noreferrer">LinkedIn -></a>
             <a class="button quiet" href="${profile.resume}" target="_blank" rel="noreferrer">Resume -></a>
@@ -98,7 +115,6 @@ function render(profile) {
             <p><b>ships</b>: ["mobile", "backend", "AI", "automation"]</p>
             <p><b>available</b>: true</p>
           </div>
-          <div class="metrics">${metricCards(profile.metrics)}</div>
         </aside>
       </div>
     </header>
@@ -114,7 +130,7 @@ function render(profile) {
       </div>
     </section>
 
-    <section id="about" class="about-section">
+    <section id="about" class="about-section" data-nav-section>
       <div class="shell about-grid">
         <figure class="portrait-card">
           <img src="${profile.photo}" alt="Portrait of ${profile.name}">
@@ -131,35 +147,39 @@ function render(profile) {
       </div>
     </section>
 
-    <section id="projects" class="shell section">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Selected Work</p>
-          <h2>Projects with real system weight.</h2>
+    <section id="projects" class="section page-band" data-nav-section>
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Selected Work</p>
+            <h2>Projects with real system weight.</h2>
+          </div>
+          <p class="section-note">A portfolio set that shows mobile product engineering, AI, graphics, simulation, algorithms, and LLM integration.</p>
         </div>
-        <p class="section-note">A portfolio set that shows mobile product engineering, enterprise backend work, simulation logic, and LLM integration.</p>
+        <div class="filter-row" role="list" aria-label="Project filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="mobile">Mobile</button>
+          <button class="chip" data-filter="ai">AI</button>
+          <button class="chip" data-filter="simulation">Simulation</button>
+          <button class="chip" data-filter="graphics">Graphics</button>
+          <button class="chip" data-filter="algorithms">Algorithms</button>
+        </div>
+        <div class="project-grid">${profile.projects.map(projectCard).join("")}</div>
       </div>
-      <div class="filter-row" role="list" aria-label="Project filters">
-        <button class="chip active" data-filter="all">All</button>
-        <button class="chip" data-filter="mobile">Mobile</button>
-        <button class="chip" data-filter="backend">Backend</button>
-        <button class="chip" data-filter="ai">AI</button>
-        <button class="chip" data-filter="simulation">Simulation</button>
-      </div>
-      <div class="project-grid">${profile.projects.map(projectCard).join("")}</div>
     </section>
 
-    <section id="experience" class="shell section">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Experience</p>
-          <h2>Internships, automation, and engineering support.</h2>
+    <section id="experience" class="section page-band" data-nav-section>
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Experience</p>
+          </div>
         </div>
+        <div class="timeline">${profile.experience.map(experienceItem).join("")}</div>
       </div>
-      <div class="timeline">${profile.experience.map(experienceItem).join("")}</div>
     </section>
 
-    <section id="skills" class="stack-section">
+    <section id="skills" class="stack-section" data-nav-section>
       <div class="shell">
         <div class="section-head">
           <div>
@@ -172,16 +192,18 @@ function render(profile) {
       </div>
     </section>
 
-    <section id="contact" class="shell contact section">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Let's talk about full-stack SWE roles.</h2>
-        <p class="section-lede">${profile.name} is based in ${profile.location} and open to internship and new-grad software engineering opportunities.</p>
-      </div>
-      <div class="contact-actions">
-        <a class="button primary" href="mailto:${profile.email}">${profile.email}</a>
-        <a class="button" href="${profile.linkedin}" target="_blank" rel="noreferrer">LinkedIn -></a>
-        <a class="button" href="${profile.github}" target="_blank" rel="noreferrer">GitHub -></a>
+    <section id="contact" class="section page-band" data-nav-section>
+      <div class="shell contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk about full-stack SWE roles.</h2>
+          <p class="section-lede">${profile.name} is based in ${profile.location} and open to internship and new-grad software engineering opportunities.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:${profile.email}">Email Nguyen -></a>
+          <a class="button" href="${profile.linkedin}" target="_blank" rel="noreferrer">LinkedIn -></a>
+          <a class="button" href="${profile.github}" target="_blank" rel="noreferrer">GitHub -></a>
+        </div>
       </div>
     </section>
   `;
@@ -208,12 +230,46 @@ function wireFilters() {
 
 function wireNav() {
   const links = document.querySelectorAll(".nav a");
+  const sections = document.querySelectorAll("[data-nav-section]");
+
   links.forEach(link => {
     link.addEventListener("click", () => {
       links.forEach(item => item.classList.remove("active"));
       link.classList.add("active");
     });
   });
+
+  let ticking = false;
+
+  const updateActiveNav = () => {
+    const scrollPosition = window.scrollY + window.innerHeight * 0.55;
+    let activeSection = sections[0];
+
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8) {
+      activeSection = sections[sections.length - 1];
+    } else {
+      sections.forEach(section => {
+        if (section.offsetTop <= scrollPosition) {
+          activeSection = section;
+        }
+      });
+    }
+
+    links.forEach(link => {
+      link.classList.toggle("active", link.getAttribute("href") === `#${activeSection.id}`);
+    });
+
+    ticking = false;
+  };
+
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateActiveNav);
+      ticking = true;
+    }
+  });
+
+  updateActiveNav();
 }
 
 async function init() {

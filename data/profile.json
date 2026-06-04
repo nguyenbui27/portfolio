@@ -1,5 +1,5 @@
 {
-  "name": "Thao Nguyen Bui",
+  "name": "Nguyen Bui",
   "title": "Full-Stack Software Engineer",
   "location": "San Francisco, CA",
   "email": "nguyenthaobui04@gmail.com",
@@ -21,17 +21,13 @@
       "I bring a math-heavy problem-solving background, debugging experience as a technical lab assistant, and a practical bias toward systems that are useful to real users."
     ]
   },
-  "metrics": [
-    { "value": "3.82", "label": "GPA, CS + Mathematics" },
-    { "value": "35%", "label": "faster data retrieval at VietinBank" },
-    { "value": "80%", "label": "less manual review via Python + SQL automation" },
-    { "value": "200+", "label": "users supported in education platforms" }
-  ],
   "education": {
     "school": "DePauw University",
     "degree": "B.A. in Computer Science and Mathematics",
     "graduation": "May 2026",
     "honors": [
+      "GPA: 3.82",
+      "Summa Cum Laude",
       "2nd Place, Indiana Collegiate Mathematics Competition",
       "WiCyS 2025 Conference Scholarship Recipient",
       "Dean's List Honors"
@@ -75,32 +71,14 @@
       "accent": "rose"
     },
     {
-      "name": "VietinBank Internal APIs",
-      "type": "Enterprise Backend",
-      "status": "Internship",
-      "link": "#experience",
-      "summary": "Transaction-validation, account lookup, authentication, and reporting APIs for internal financial dashboards.",
-      "impact": [
-        "Implemented Java Spring Boot modules backed by Oracle SQL for transaction and account workflows.",
-        "Automated daily financial checks with Python and SQL, reducing manual review workload by about 80%.",
-        "Cut recurring report generation time by 40% for operations teams."
-      ],
-      "stack": [
-        "Java",
-        "Spring Boot",
-        "Oracle SQL",
-        "Python",
-        "REST APIs",
-        "Secure Auth",
-        "Financial Data"
-      ],
-      "accent": "green"
-    },
-    {
       "name": "Space Station Rescue Simulator",
       "type": "Simulation + Game Systems",
       "status": "Course project",
       "link": "#projects",
+      "media": {
+        "type": "video",
+        "src": "./src/assets/space-station-rescue.mp4"
+      },
       "summary": "2D orbital rescue simulator with moving objects, space stations, collision detection, and modular mission logic.",
       "impact": [
         "Built Java Swing/AWT rendering and controls for 5+ stations and 20+ moving objects.",
@@ -116,6 +94,77 @@
         "State Pattern"
       ],
       "accent": "blue"
+    },
+    {
+      "name": "Tiger Cub",
+      "type": "Graphics + Interaction",
+      "status": "Course project",
+      "link": "#projects",
+      "media": {
+        "type": "video",
+        "src": "./src/assets/tiger-cub.mp4"
+      },
+      "summary": "Interactive graphics project focused on animation, visual composition, and smooth object movement.",
+      "impact": [
+        "Built a visual scene with animated elements and timing-based interaction.",
+        "Practiced graphics programming fundamentals including object drawing, transforms, and frame updates.",
+        "Designed the project as a polished visual demo with clear motion and presentation."
+      ],
+      "stack": [
+        "Graphics",
+        "Animation",
+        "Interactive Systems",
+        "Rendering",
+        "Visual Design"
+      ],
+      "accent": "green"
+    },
+    {
+      "name": "Neural Network Character Recognition",
+      "type": "AI + Computer Vision",
+      "status": "Course project",
+      "link": "#projects",
+      "media": {
+        "type": "video",
+        "src": "./src/assets/character-recognition.mp4"
+      },
+      "summary": "Handwriting recognition system built with convolutional neural networks and real-time training feedback.",
+      "impact": [
+        "Created a handwriting recognition system achieving 89% accuracy using convolutional neural networks.",
+        "Processed 8,000+ handwritten samples with image preprocessing and normalization techniques.",
+        "Built a training interface with real-time accuracy monitoring and performance visualization."
+      ],
+      "stack": [
+        "Python",
+        "TensorFlow",
+        "CNN",
+        "Image Preprocessing",
+        "Computer Vision",
+        "Model Evaluation"
+      ],
+      "accent": "rose"
+    },
+    {
+      "name": "Sudoku Simulated Annealing",
+      "type": "Algorithms + Optimization",
+      "status": "Research project",
+      "link": "https://github.com/nguyenbui27/sudoku_SimlatedAnnealing",
+      "paper": "./src/assets/sudoku-simulated-annealing.pdf",
+      "summary": "Optimization-based Sudoku solver exploring simulated annealing behavior, convergence, and search performance.",
+      "impact": [
+        "Implemented a stochastic local-search solver using simulated annealing for Sudoku optimization.",
+        "Studied temperature schedules, candidate moves, and convergence behavior across puzzle states.",
+        "Documented the final method and results in an attached project paper."
+      ],
+      "stack": [
+        "Python",
+        "Simulated Annealing",
+        "Optimization",
+        "Algorithms",
+        "Data Visualization",
+        "Research Writing"
+      ],
+      "accent": "amber"
     },
     {
       "name": "AI Chatbot",
@@ -183,6 +232,16 @@
         "Implemented real-time homework and exam updates for 200+ users."
       ],
       "stack": ["HTML", "CSS", "JavaScript", "Accessibility", "Realtime Updates"]
+    },
+    {
+      "role": "Internal Vice-President",
+      "company": "Vietnamese Student Association - DePauw University",
+      "dates": "May 2023 - May 2024",
+      "details": [
+        "Coordinated over 8 multicultural events attracting more than 500 attendees, promoting intercultural awareness.",
+        "Managed financial operations, led fundraising initiatives, and drove 30% membership expansion."
+      ],
+      "stack": ["Leadership", "Event Coordination", "Budgeting", "Fundraising", "Community Building"]
     }
   ],
   "skills": {

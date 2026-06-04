@@ -13,7 +13,9 @@ const mimeTypes = {
   ".css": "text/css; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
   ".json": "application/json; charset=utf-8",
-  ".pdf": "application/pdf"
+  ".pdf": "application/pdf",
+  ".mp4": "video/mp4",
+  ".mov": "video/quicktime"
 };
 
 function send(res, status, body, contentType = "text/plain; charset=utf-8") {
@@ -57,5 +59,5 @@ const server = createServer(async (req, res) => {
 });
 
 server.listen(port, "::", () => {
-  console.log(`Thao portfolio running at http://[::1]:${port}`);
+  console.log(`Nguyen portfolio running at http://[::1]:${port}`);
 });
