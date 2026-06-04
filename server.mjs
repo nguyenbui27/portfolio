@@ -4,7 +4,7 @@ import { extname, join, normalize } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL(".", import.meta.url));
-const publicDir = join(root, "src");
+const publicDir = root;
 const dataPath = join(root, "data", "profile.json");
 const port = Number(process.env.PORT || 8017);
 

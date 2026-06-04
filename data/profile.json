@@ -6,8 +6,8 @@
   "phone": "+1 (765) 615-8452",
   "linkedin": "http://www.linkedin.com/in/nguyenthaobui04",
   "github": "https://github.com/nguyenbui27",
-  "resume": "./resume-thao-nguyen-bui.pdf",
-  "photo": "./thao-nguyen-bui-photo.jpg",
+  "resume": "./src/resume-thao-nguyen-bui.pdf",
+  "photo": "./src/thao-nguyen-bui-photo.jpg",
   "hero": {
     "eyebrow": "Open to SWE internships and new-grad roles",
     "headline": "Full-stack engineer building mobile, backend, and AI-powered systems.",

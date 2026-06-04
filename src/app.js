@@ -218,13 +218,13 @@ function wireNav() {
 
 async function init() {
   try {
-    const response = await fetch("/api/profile");
+    const response = await fetch("./data/profile.json");
     if (!response.ok) {
-      throw new Error("Profile API failed");
+      throw new Error("Profile data failed to load");
     }
     render(await response.json());
   } catch (error) {
-    app.innerHTML = `<section class="loading shell">Could not load portfolio data. Start the app with <code>npm run dev</code>.</section>`;
+    app.innerHTML = `<section class="loading shell">Could not load portfolio data. Check that <code>data/profile.json</code> is available.</section>`;
     console.error(error);
   }
 }
