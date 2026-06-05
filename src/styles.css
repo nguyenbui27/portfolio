@@ -354,7 +354,7 @@ h3 {
 .about-section .eyebrow,
 .contact .eyebrow {
   font-size: clamp(24px, 3.5vw, 42px);
-  color: #7f174d;
+  color: #2596be;
 }
 
 .section-note {
