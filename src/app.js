@@ -112,7 +112,7 @@ function render(profile) {
             <p><b>name</b>: "${profile.name}"</p>
             <p><b>role</b>: "${profile.title}"</p>
             <p><b>degree</b>: "CS + Mathematics"</p>
-            <p><b>ships</b>: ["mobile", "backend", "AI", "automation"]</p>
+            <p><b>ships</b>: ["mobile", "backend", "AI", "data"]</p>
             <p><b>available</b>: true</p>
           </div>
         </aside>
@@ -184,9 +184,7 @@ function render(profile) {
         <div class="section-head">
           <div>
             <p class="eyebrow">Technical Stack</p>
-            <h2>Full-stack range, from app UI to data workflows.</h2>
           </div>
-          <p class="section-note">The stack is intentionally broad because the strongest story is cross-layer ownership: UI, APIs, data, cloud, and AI-assisted product features.</p>
         </div>
         <div class="skill-grid">${Object.entries(profile.skills).map(skillColumn).join("")}</div>
       </div>
