@@ -195,7 +195,7 @@ function render(profile) {
         <div>
           <p class="eyebrow">Contact</p>
           <h2>Let's talk about full-stack SWE roles.</h2>
-          <p class="section-lede">${profile.name} is based in ${profile.location} and open to internship and new-grad software engineering opportunities.</p>
+          <p class="section-lede">I am based in ${profile.location} and open to internship and new-grad software engineering opportunities.</p>
         </div>
         <div class="contact-actions">
           <a class="button primary" href="mailto:${profile.email}">Email Nguyen -></a>
@@ -272,7 +272,7 @@ function wireNav() {
 
 async function init() {
   try {
-    const response = await fetch("./data/profile.json?v=11");
+    const response = await fetch("./data/profile.json?v=12");
     if (!response.ok) {
       throw new Error("Profile data failed to load");
     }
