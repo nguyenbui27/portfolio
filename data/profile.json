@@ -49,6 +49,10 @@
       "type": "Mobile + Backend + AI",
       "status": "Senior project",
       "link": "https://github.com/nguyenbui27/KITESseniorproject",
+      "media": {
+        "type": "video",
+        "src": "./src/assets/kites-demo.mov"
+      },
       "summary": "Native Android child-safety platform with parent/child roles, persistent sessions, live location, messaging, SOS alerts, and an embedded Gemini assistant.",
       "impact": [
         "Built role-based navigation and authentication for parent and child flows.",
