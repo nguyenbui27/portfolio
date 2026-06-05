@@ -354,7 +354,7 @@ h3 {
 .about-section .eyebrow,
 .contact .eyebrow {
   font-size: clamp(24px, 3.5vw, 42px);
-  color: #2596be;
+  color: #d73b8c;
 }
 
 .section-note {
@@ -398,7 +398,8 @@ h3 {
 
 .project-visual {
   position: relative;
-  min-height: 240px;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
   background:
@@ -416,7 +417,6 @@ h3 {
   display: block;
   width: 100%;
   height: 100%;
-  min-height: 260px;
   object-fit: cover;
 }
 
