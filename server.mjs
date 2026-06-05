@@ -59,5 +59,5 @@ const server = createServer(async (req, res) => {
 });
 
 server.listen(port, "::", () => {
-  console.log(`Nguyen portfolio running at http://[::1]:${port}`);
+  console.log(`Thao Nguyen Bui portfolio running at http://[::1]:${port}`);
 });

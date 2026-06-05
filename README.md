@@ -1,4 +1,4 @@
-# Nguyen Bui Full-Stack Portfolio
+# Thao Nguyen Bui Full-Stack Portfolio
 
 This is a VS Code-ready portfolio project with a tiny Node backend and a browser frontend.
 
