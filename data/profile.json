@@ -77,7 +77,7 @@
     {
       "name": "Space Station Rescue Simulator",
       "type": "Simulation + Game Systems",
-      "status": "Course project",
+      "status": "Independent project",
       "link": "#projects",
       "media": {
         "type": "video",
@@ -102,8 +102,8 @@
     {
       "name": "Tiger Cub",
       "type": "Graphics + Interaction",
-      "status": "Course project",
-      "link": "#projects",
+      "status": "Independent project",
+      "link": "https://github.com/nguyenbui27/Tiger-Cub",
       "media": {
         "type": "video",
         "src": "./src/assets/tiger-cub.mp4"
@@ -126,7 +126,7 @@
     {
       "name": "Neural Network Character Recognition",
       "type": "AI + Computer Vision",
-      "status": "Course project",
+      "status": "Independent project",
       "link": "#projects",
       "media": {
         "type": "video",
@@ -149,7 +149,7 @@
       "accent": "rose"
     },
     {
-      "name": "Sudoku Simulated Annealing",
+      "name": "Solving Generalized Sudoku by Simulated Annealing",
       "type": "Algorithms + Optimization",
       "status": "Research project",
       "link": "https://github.com/nguyenbui27/sudoku_SimlatedAnnealing",

@@ -33,7 +33,7 @@ function projectVisual(project) {
 
 function projectLinks(project) {
   const links = [
-    `<a class="text-link" href="${project.link}" target="${project.link.startsWith("http") ? "_blank" : "_self"}" rel="noreferrer">View context -></a>`
+    `<a class="text-link" href="${project.link}" target="${project.link.startsWith("http") ? "_blank" : "_self"}" rel="noreferrer">GitHub link -></a>`
   ];
 
   if (project.paper) {
