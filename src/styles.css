@@ -317,6 +317,47 @@ h3 {
   align-items: center;
 }
 
+.education-groups {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.education-groups > div > h3 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.award-list {
+  display: grid;
+  gap: 10px;
+}
+
+.award-item {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: white;
+}
+
+.award-item h3 {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.award-item p {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
 .coursework,
 .tags {
   display: flex;

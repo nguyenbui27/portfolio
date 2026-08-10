@@ -26,51 +26,114 @@
     "degree": "B.A. in Computer Science and Mathematics",
     "graduation": "May 2026",
     "honors": [
-      "GPA: 3.82",
-      "Summa Cum Laude",
-      "2nd Place, Indiana Collegiate Mathematics Competition",
-      "WiCyS 2025 Conference Scholarship Recipient",
-      "Dean's List Honors"
+      "GPA: 3.81",
+      "Summa Cum Laude"
+    ],
+    "awards": [
+      {
+        "title": "2nd Place - Indiana Collegiate Mathematics Competition (ICMC)",
+        "issuer": "Mathematical Association of America (MAA)",
+        "date": "Apr 2024"
+      },
+      {
+        "title": "1st Place - High School's Science and Engineering Competition",
+        "issuer": "Le Quy Don High School for The Gifted",
+        "date": "Jan 2021"
+      },
+      {
+        "title": "4th Place - Da Nang City's Science and Engineering Competition",
+        "issuer": "Da Nang City",
+        "date": "Jan 2021"
+      },
+      {
+        "title": "1st Place - High School's Biology Excellent Student Contest Round 1",
+        "issuer": "Le Quy Don High School for The Gifted",
+        "date": "Jan 2020"
+      },
+      {
+        "title": "Dean's List",
+        "issuer": "DePauw University",
+        "date": ""
+      },
+      {
+        "title": "WiCyS 2025 Conference Scholarship Recipient",
+        "issuer": "Women in CyberSecurity",
+        "date": "2025"
+      }
+    ],
+    "affiliates": [
+      "Grace Hopper Conference",
+      "SHPE",
+      "Tapia Conference",
+      "Rewriting The Code",
+      "WECode",
+      "Women In CyberSecurity"
+    ],
+    "leadership": [
+      "Vice-President, DePauw Vietnamese Student Association",
+      "Public Relations Chair, DePauw Maths Club"
     ],
     "coursework": [
-      "Object-Oriented Programming",
-      "Data Structures & Algorithms",
-      "Database and File Systems",
-      "Computer Systems",
-      "Mobile Development",
+      "Object-Oriented Programming (Java)",
+      "Data Structures & Algorithms (C++)",
+      "Database and File Systems (SQL)",
+      "Computer Systems (C)",
+      "Mobile Development (Kotlin)",
       "Statistical Computing",
-      "Linear Algebra",
-      "Numerical Analysis"
+      "Linear Algebra"
     ]
   },
   "projects": [
     {
+      "name": "ProofVault",
+      "type": "Full-Stack + Blockchain",
+      "status": "Independent project",
+      "link": "",
+      "summary": "Full-stack evidence verification platform that organizes case files, generates SHA-256 fingerprints, records immutable proofs on Polygon, and detects evidence modification.",
+      "impact": [
+        "Engineered a verification system with case-based file organization, hash generation, blockchain proof recording, and tamper detection.",
+        "Developed 11 FastAPI endpoints including presigned-upload and file-verification APIs with ownership validation, SQLAlchemy models, Alembic migrations, and transactional database operations.",
+        "Designed a Dockerized AWS architecture with private S3 storage, least-privilege IAM, ECR, ECS/Fargate, ALB health checks, CloudWatch logging, and Amplify deployment."
+      ],
+      "stack": [
+        "React",
+        "TypeScript",
+        "FastAPI",
+        "PostgreSQL",
+        "Polygon",
+        "AWS",
+        "Docker",
+        "SQLAlchemy",
+        "Alembic"
+      ],
+      "accent": "blue"
+    },
+    {
       "name": "KITES",
-      "type": "Mobile + Backend + AI",
+      "type": "Android + Backend",
       "status": "Senior project",
-      "link": "https://github.com/nguyenbui27/KITESseniorproject",
+      "link": "https://github.com/nguyenbui27/KITES",
       "media": {
         "type": "video",
         "src": "./src/assets/kites-demo.mp4"
       },
-      "summary": "Native Android child-safety platform with parent/child roles, persistent sessions, live location, messaging, SOS alerts, and an embedded Gemini assistant.",
+      "summary": "Android family-safety app with role-based access, location tracking, guardian management, emergency communication, and Gemini-powered chatbot guidance.",
       "impact": [
-        "Built role-based navigation and authentication for parent and child flows.",
-        "Implemented Socket.IO/STOMP-style real-time communication, push alerts, battery-level monitoring, and image sharing.",
-        "Designed an AI assistant flow with Gemini prompt handling and multi-turn conversation context."
+        "Built and deployed mobile functionality with React Native, Express.js backend services, React Native Maps, guardian management, and emergency communication.",
+        "Designed a modular TypeScript architecture with REST APIs, Recoil, AsyncStorage, and centralized service layers.",
+        "Supported 10+ parent-facing safety features while simplifying maintenance and debugging with Claude Code."
       ],
       "stack": [
         "React Native",
         "TypeScript",
         "Node.js",
-        "Firebase Cloud Messaging",
-        "Socket.IO",
-        "WebSocket",
-        "Google Maps SDK",
-        "Gemini API",
+        "Express.js",
+        "REST APIs",
         "Recoil",
-        "Axios",
-        "AsyncStorage"
+        "AsyncStorage",
+        "React Native Maps",
+        "Gemini API",
+        "Claude Code"
       ],
       "accent": "rose"
     },
@@ -152,7 +215,7 @@
       "name": "Solving Generalized Sudoku by Simulated Annealing",
       "type": "Algorithms + Optimization",
       "status": "Research project",
-      "link": "https://github.com/nguyenbui27/sudoku_SimlatedAnnealing",
+      "link": "https://github.com/nguyenbui27/sudoku_SimulatedAnnealing",
       "paper": "./src/assets/sudoku-simulated-annealing.pdf",
       "summary": "Optimization-based Sudoku solver exploring simulated annealing behavior, convergence, and search performance.",
       "impact": [
@@ -194,65 +257,43 @@
   ],
   "experience": [
     {
-      "role": "Technical Chief of Staff Fellow",
+      "role": "Software Engineer Intern",
       "company": "Pay Your Tuition Foundation",
       "dates": "Aug 2025 - Dec 2025",
       "details": [
-        "Coordinated workflows across Salesforce, Webflow, and Make, automating 12+ approval and validation steps.",
-        "Integrated Salesforce CRM with internal databases through APIs to keep data consistent across three automation tools.",
-        "Worked with Microsoft and IBM partners to troubleshoot API connections and standardize integration workflows."
+        "Developed and maintained a student crowdfunding and tuition-support platform serving 2,000+ students using Webflow, Memberstack, Salesforce, Make, and REST APIs.",
+        "Built 12+ eligibility, fraud-review, approval, and reconciliation workflows with JavaScript, Salesforce, Webflow, REST APIs, and webhooks, increasing throughput from 70% to 95%.",
+        "Migrated Stripe to Razorpay for tracking $10M+ in tuition funds and stabilized JSON-based REST API integrations, reducing sync failures from 40% to 3%."
       ],
-      "stack": ["Salesforce", "Webflow", "Make", "APIs", "Automation", "CRM"]
+      "stack": ["JavaScript", "Salesforce", "Webflow", "Memberstack", "Make", "REST APIs", "Razorpay"]
+    },
+    {
+      "role": "AI Agent Engineering Extern",
+      "company": "Wayfair via Extern",
+      "dates": "Jul 2026 - Sep 2026",
+      "details": [
+        "Engineered a 4-agent n8n pipeline for market trend discovery, competitor intelligence, content strategy, and dashboard generation.",
+        "Built a Market Trend Discovery Agent using Mistral AI, Google Gemini, HuggingFace FLUX, Cheerio, and Google Drive APIs to detect emerging style signals.",
+        "Built a Competitor Intelligence Agent that pulled live pricing, assortment, and feature data, reducing manual competitive analysis from hours to 20 minutes per execution."
+      ],
+      "stack": ["n8n", "Mistral AI", "Google Gemini", "HuggingFace FLUX", "Cheerio", "Google Drive APIs"]
     },
     {
       "role": "Software Engineer Intern",
       "company": "VietinBank",
       "dates": "May 2025 - Aug 2025",
       "details": [
-        "Implemented transaction-validation and account-lookup modules in Java Spring Boot with Oracle SQL.",
-        "Automated financial checks with Python and SQL for 50+ daily records.",
-        "Developed authentication and reporting APIs for internal dashboard data retrieval."
+        "Engineered transaction-validation and account-lookup services with Java Spring Boot, Oracle SQL, and REST APIs, enabling balance and transaction retrieval within 10 seconds.",
+        "Built a Python and SQL reconciliation pipeline to detect duplicate transactions, missing records, and balance mismatches across 50+ daily records, reducing manual review by 80%.",
+        "Developed reporting APIs and reusable data-processing modules for internal dashboards and monthly reports, reducing errors and accelerating issue investigation."
       ],
       "stack": ["Java", "Spring Boot", "Oracle SQL", "Python", "REST APIs"]
-    },
-    {
-      "role": "Technical Lab Assistant",
-      "company": "DePauw University",
-      "dates": "Feb 2025 - May 2025",
-      "details": [
-        "Provided 1:1 debugging support for syntax, logic, and runtime errors.",
-        "Participated in code reviews and helped resolve critical bugs for better project stability.",
-        "Supported students in completing programming assignments on time."
-      ],
-      "stack": ["Debugging", "Code Review", "Teaching", "Data Structures"]
-    },
-    {
-      "role": "Software Engineer Intern",
-      "company": "Khoi Nguyen Academy",
-      "dates": "May 2024 - Aug 2024",
-      "details": [
-        "Built responsive educational platform features with HTML, CSS, and JavaScript.",
-        "Improved accessibility and student/instructor user experience.",
-        "Implemented real-time homework and exam updates for 200+ users."
-      ],
-      "stack": ["HTML", "CSS", "JavaScript", "Accessibility", "Realtime Updates"]
-    },
-    {
-      "role": "Internal Vice-President",
-      "company": "Vietnamese Student Association - DePauw University",
-      "dates": "May 2023 - May 2024",
-      "details": [
-        "Coordinated over 8 multicultural events attracting more than 500 attendees, promoting intercultural awareness.",
-        "Managed financial operations, led fundraising initiatives, and drove 30% membership expansion."
-      ],
-      "stack": ["Leadership", "Event Coordination", "Budgeting", "Fundraising", "Community Building"]
     }
   ],
   "skills": {
-    "Languages": ["Java", "Python", "C++", "JavaScript", "TypeScript", "SQL", "R", "HTML/CSS"],
-    "Frontend + Mobile": ["React", "React Native", "React Navigation", "Recoil", "Axios", "Responsive UI", "Accessibility"],
-    "Backend + Data": ["Node.js", "Express.js", "Spring Boot", "REST APIs", "WebSocket", "MongoDB", "PostgreSQL", "Oracle SQL", "Drizzle ORM"],
-    "Cloud + Tools": ["Git", "GitHub", "Firebase Cloud Messaging", "AWS", "Google Cloud Platform", "Salesforce", "Webflow", "Docker-ready workflows", "Linux/Unix"],
-    "AI + Analytics": ["Gemini API", "Prompt Engineering", "TensorFlow", "Tableau", "Excel", "Statistical Computing"]
+    "Programming Languages": ["Java", "Python", "C++", "JavaScript", "TypeScript", "SQL", "R", "HTML/CSS"],
+    "Frameworks & Libraries": ["React", "React Native", "Node.js", "Express.js", "Spring Boot", "Axios", "AWT", "Firebase"],
+    "Databases": ["MongoDB", "PostgreSQL", "Oracle SQL", "MySQL", "SQLite"],
+    "Tools & Services": ["Git", "AWS", "GCP", "Azure", "WebSocket", "Salesforce", "Webflow", "Razorpay", "Linux/Unix", "TensorFlow"]
   }
 }

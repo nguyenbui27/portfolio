@@ -3,12 +3,21 @@ const app = document.querySelector("#app");
 const iconMap = {
   rose: "AI",
   green: "SQL",
-  blue: "SIM",
+  blue: "API",
   amber: "LLM"
 };
 
 function tagList(items) {
   return items.map(item => `<span class="tag">${item}</span>`).join("");
+}
+
+function awardList(awards) {
+  return awards.map(award => `
+    <article class="award-item">
+      <h3>${award.title}</h3>
+      <p>${[award.issuer, award.date].filter(Boolean).join(" / ")}</p>
+    </article>
+  `).join("");
 }
 
 function projectVisual(project) {
@@ -32,15 +41,17 @@ function projectVisual(project) {
 }
 
 function projectLinks(project) {
-  const links = [
-    `<a class="text-link" href="${project.link}" target="${project.link.startsWith("http") ? "_blank" : "_self"}" rel="noreferrer">GitHub link -></a>`
-  ];
+  const links = [];
+
+  if (project.link) {
+    links.push(`<a class="text-link" href="${project.link}" target="${project.link.startsWith("http") ? "_blank" : "_self"}" rel="noreferrer">GitHub link -></a>`);
+  }
 
   if (project.paper) {
     links.push(`<a class="text-link" href="${project.paper}" target="_blank" rel="noreferrer">Read paper -></a>`);
   }
 
-  return `<div class="project-links">${links.join("")}</div>`;
+  return links.length ? `<div class="project-links">${links.join("")}</div>` : "";
 }
 
 function projectCard(project) {
@@ -125,6 +136,20 @@ function render(profile) {
           <p class="eyebrow">Education</p>
           <h2>${profile.education.school}</h2>
           <p class="section-lede">${profile.education.degree}, ${profile.education.graduation}. ${profile.education.honors.join(". ")}.</p>
+          <div class="education-groups">
+            <div>
+              <h3>Awards</h3>
+              <div class="award-list">${awardList(profile.education.awards)}</div>
+            </div>
+            <div>
+              <h3>Affiliates</h3>
+              <div class="coursework">${tagList(profile.education.affiliates)}</div>
+            </div>
+            <div>
+              <h3>Leadership</h3>
+              <div class="coursework">${tagList(profile.education.leadership)}</div>
+            </div>
+          </div>
         </div>
         <div class="coursework">${tagList(profile.education.coursework)}</div>
       </div>
@@ -154,10 +179,11 @@ function render(profile) {
             <p class="eyebrow">Selected Work</p>
             <h2>Projects with real system weight.</h2>
           </div>
-          <p class="section-note">A portfolio set that shows mobile product engineering, AI, graphics, simulation, algorithms, and LLM integration.</p>
+          <p class="section-note">A portfolio set that shows full-stack systems, blockchain verification, mobile product engineering, AI, graphics, simulation, algorithms, and LLM integration.</p>
         </div>
         <div class="filter-row" role="list" aria-label="Project filters">
           <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="full-stack">Full-stack</button>
           <button class="chip" data-filter="mobile">Mobile</button>
           <button class="chip" data-filter="ai">AI</button>
           <button class="chip" data-filter="simulation">Simulation</button>
@@ -272,7 +298,7 @@ function wireNav() {
 
 async function init() {
   try {
-    const response = await fetch("./data/profile.json?v=13");
+    const response = await fetch("./data/profile.json?v=15");
     if (!response.ok) {
       throw new Error("Profile data failed to load");
     }
