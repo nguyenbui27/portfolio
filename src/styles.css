@@ -317,13 +317,13 @@ h3 {
   align-items: center;
 }
 
-.education-groups {
+.about-awards {
   display: grid;
-  gap: 18px;
+  gap: 12px;
   margin-top: 28px;
 }
 
-.education-groups > div > h3 {
+.about-awards > h3 {
   margin: 0 0 10px;
   color: var(--ink);
   font-family: var(--mono);
@@ -358,7 +358,6 @@ h3 {
   line-height: 1.45;
 }
 
-.coursework,
 .tags {
   display: flex;
   flex-wrap: wrap;

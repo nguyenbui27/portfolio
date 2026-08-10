@@ -130,31 +130,6 @@ function render(profile) {
       </div>
     </header>
 
-    <section class="band">
-      <div class="shell split">
-        <div>
-          <p class="eyebrow">Education</p>
-          <h2>${profile.education.school}</h2>
-          <p class="section-lede">${profile.education.degree}, ${profile.education.graduation}. ${profile.education.honors.join(". ")}.</p>
-          <div class="education-groups">
-            <div>
-              <h3>Awards</h3>
-              <div class="award-list">${awardList(profile.education.awards)}</div>
-            </div>
-            <div>
-              <h3>Affiliates</h3>
-              <div class="coursework">${tagList(profile.education.affiliates)}</div>
-            </div>
-            <div>
-              <h3>Leadership</h3>
-              <div class="coursework">${tagList(profile.education.leadership)}</div>
-            </div>
-          </div>
-        </div>
-        <div class="coursework">${tagList(profile.education.coursework)}</div>
-      </div>
-    </section>
-
     <section id="about" class="about-section" data-nav-section>
       <div class="shell about-grid">
         <figure class="portrait-card">
@@ -167,6 +142,10 @@ function render(profile) {
           <p class="section-lede">${profile.about.intro}</p>
           <div class="about-notes">
             ${profile.about.details.map(detail => `<p>${detail}</p>`).join("")}
+          </div>
+          <div class="about-awards">
+            <h3>Awards</h3>
+            <div class="award-list">${awardList(profile.about.awards)}</div>
           </div>
         </div>
       </div>
@@ -298,7 +277,7 @@ function wireNav() {
 
 async function init() {
   try {
-    const response = await fetch("./data/profile.json?v=15");
+    const response = await fetch("./data/profile.json?v=16");
     if (!response.ok) {
       throw new Error("Profile data failed to load");
     }

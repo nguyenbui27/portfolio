@@ -1,7 +1,7 @@
 {
   "name": "Thao Nguyen Bui",
   "title": "Full-Stack Software Engineer",
-  "location": "San Francisco, CA",
+  "location": "Chicago, IL",
   "email": "nguyenthaobui04@gmail.com",
   "phone": "+1 (765) 615-8452",
   "linkedin": "http://www.linkedin.com/in/nguyenthaobui04",
@@ -14,20 +14,11 @@
     "summary": "Computer Science and Mathematics student at DePauw University with hands-on experience across React Native, TypeScript, Node APIs, Java Spring Boot, Oracle SQL, cloud tooling, and automation workflows."
   },
   "about": {
-    "intro": "I am a Computer Science and Mathematics student who likes building across the full stack: mobile interfaces, backend APIs, database workflows, and AI-assisted product features.",
+    "intro": "I am a DePauw University Computer Science and Mathematics student building full-stack, mobile, blockchain, and AI systems with hands-on experience across React, React Native, FastAPI, Spring Boot, Oracle SQL, AWS, and automation workflows.",
     "details": [
-      "At VietinBank, I worked on Spring Boot and Oracle SQL modules for transaction validation, account lookup, authentication, reporting, and Python automation.",
-      "For KITES, I built a React Native and TypeScript safety app with parent/child roles, location tracking, push notifications, real-time messaging, and a Gemini-powered assistant.",
-      "I bring a math-heavy problem-solving background, debugging experience as a technical lab assistant, and a practical bias toward systems that are useful to real users."
-    ]
-  },
-  "education": {
-    "school": "DePauw University",
-    "degree": "B.A. in Computer Science and Mathematics",
-    "graduation": "May 2026",
-    "honors": [
-      "GPA: 3.81",
-      "Summa Cum Laude"
+      "At Pay Your Tuition Foundation, I built Webflow, Memberstack, Salesforce, Make, Razorpay, JavaScript, REST API, and webhook workflows for a student crowdfunding and tuition-support platform serving 2,000+ students.",
+      "At VietinBank, I engineered Java Spring Boot, Oracle SQL, REST API, Python, and SQL data workflows for transaction validation, account lookup, reconciliation, dashboards, and reporting.",
+      "My project work includes ProofVault, KITES, AI agent workflows, computer vision, optimization, and interactive systems, with a practical bias toward products that are useful to real users."
     ],
     "awards": [
       {
@@ -60,36 +51,15 @@
         "issuer": "Women in CyberSecurity",
         "date": "2025"
       }
-    ],
-    "affiliates": [
-      "Grace Hopper Conference",
-      "SHPE",
-      "Tapia Conference",
-      "Rewriting The Code",
-      "WECode",
-      "Women In CyberSecurity"
-    ],
-    "leadership": [
-      "Vice-President, DePauw Vietnamese Student Association",
-      "Public Relations Chair, DePauw Maths Club"
-    ],
-    "coursework": [
-      "Object-Oriented Programming (Java)",
-      "Data Structures & Algorithms (C++)",
-      "Database and File Systems (SQL)",
-      "Computer Systems (C)",
-      "Mobile Development (Kotlin)",
-      "Statistical Computing",
-      "Linear Algebra"
     ]
   },
   "projects": [
     {
       "name": "ProofVault",
-      "type": "Full-Stack + Blockchain",
+      "type": "Full-Stack + Blockchain + LLM",
       "status": "Independent project",
-      "link": "",
-      "summary": "Full-stack evidence verification platform that organizes case files, generates SHA-256 fingerprints, records immutable proofs on Polygon, and detects evidence modification.",
+      "link": "https://github.com/nguyenbui27/ProofVault",
+      "summary": "Full-stack evidence verification platform with blockchain-backed integrity checks, case-based file organization, SHA-256 fingerprints, Polygon proofs, and LLM-assisted review flows.",
       "impact": [
         "Engineered a verification system with case-based file organization, hash generation, blockchain proof recording, and tamper detection.",
         "Developed 11 FastAPI endpoints including presigned-upload and file-verification APIs with ownership validation, SQLAlchemy models, Alembic migrations, and transactional database operations.",
@@ -104,7 +74,8 @@
         "AWS",
         "Docker",
         "SQLAlchemy",
-        "Alembic"
+        "Alembic",
+        "LLM APIs"
       ],
       "accent": "blue"
     },
