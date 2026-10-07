@@ -58,7 +58,7 @@
       "name": "ProofVault",
       "type": "Full-Stack + Blockchain + LLM",
       "status": "Independent project",
-      "link": "https://github.com/nguyenbui27/ProofVault",
+      "link": "https://github.com/henryng15/ProofVault",
       "summary": "Full-stack evidence verification platform with blockchain-backed integrity checks, case-based file organization, SHA-256 fingerprints, Polygon proofs, and LLM-assisted review flows.",
       "impact": [
         "Engineered a verification system with case-based file organization, hash generation, blockchain proof recording, and tamper detection.",
