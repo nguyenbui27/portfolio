@@ -277,7 +277,7 @@ function wireNav() {
 
 async function init() {
   try {
-    const response = await fetch("./data/profile.json?v=16");
+    const response = await fetch("./data/profile.json?v=17");
     if (!response.ok) {
       throw new Error("Profile data failed to load");
     }
