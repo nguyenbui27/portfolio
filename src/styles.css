@@ -59,13 +59,9 @@ h3 {
   gap: 13px;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-}
-.identity span {
-  max-width: 85px;
-  font:
-    600 12px/1.4 "DM Sans",
-    sans-serif;
+  font-size: 28px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 nav {
   margin-left: auto;
@@ -143,7 +139,8 @@ nav a[aria-current] {
   align-items: center;
   gap: 9px;
   font-size: 12px;
-  max-width: 240px;
+  max-width: none;
+  white-space: nowrap;
   line-height: 1.5;
 }
 .availability > span {
@@ -564,8 +561,8 @@ figcaption {
   nav {
     gap: 12px;
   }
-  .identity span {
-    display: none;
+  .identity {
+    font-size: 25px;
   }
   .topbar {
     gap: 15px;
@@ -709,4 +706,16 @@ figcaption {
     scroll-behavior: auto !important;
     transition: none !important;
   }
+}
+
+@media (min-width: 601px) and (max-width: 1120px) {
+  .topbar { height: auto; min-height: 82px; flex-wrap: wrap; padding-top: 15px; padding-bottom: 15px; gap: 12px; }
+  .topbar > .action { margin-left: auto; }
+  .topbar nav { order: 3; width: 100%; justify-content: space-between; margin-left: 0; }
+  .availability { top: 157px; left: 4%; right: auto; }
+}
+@media (max-width: 600px) {
+  .identity { font-size: clamp(23px, 6vw, 28px); }
+  .world-heading > p:last-child { max-width: 90vw; }
+  .availability { top: 157px; font-size: clamp(8px, 2.6vw, 10px); gap: 6px; }
 }

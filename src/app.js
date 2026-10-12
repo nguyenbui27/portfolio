@@ -65,8 +65,8 @@ const link = (url, text) =>
 
 function render() {
   document.querySelector(".nav")?.remove();
-  app.innerHTML = `<header class="topbar"><a class="identity" href="#home">TNB<span>Thao Nguyen Bui</span></a><nav aria-label="Portfolio destinations">${places.map((p) => `<a href="#${p.id}">${p.name}</a>`).join("")}</nav>${link(profile.resume, "Resume")}</header>
-    <main class="world"><div class="world-heading"><p class="eyebrow">A LITTLE WORLD. A LOT OF POSSIBILITIES.</p><h1>Nguyen's World<span>.</span></h1><p>Full-stack engineer. Curious by nature. Builder at heart.</p></div>
+  app.innerHTML = `<header class="topbar"><a class="identity" href="#home">Thao Nguyen Bui</a><nav aria-label="Portfolio destinations">${places.map((p) => `<a href="#${p.id}">${p.name}</a>`).join("")}</nav>${link(profile.resume, "Resume")}</header>
+    <main class="world"><div class="world-heading"><p class="eyebrow">A LITTLE WORLD. A LOT OF POSSIBILITIES.</p><h1>Nguyen's World<span>.</span></h1><p>I enjoy making software that helps people in their everyday lives.</p></div>
     <div class="availability"><span></span>${esc(profile.hero.eyebrow)}</div>
     <canvas id="world-canvas" tabindex="0" aria-label="Interactive portfolio world. Move with arrow keys or WASD; press Enter near a destination."></canvas>
     <div class="destinations">${places.map((p, i) => `<button class="destination" data-place="${p.id}" style="--x:${p.x}%;--y:${p.y}%;--accent:${p.color}"><span class="destination-number">0${i + 1}</span><span>${p.title}<small>${p.name}</small></span><i class="visit-mark" aria-hidden="true"></i></button>`).join("")}</div>
