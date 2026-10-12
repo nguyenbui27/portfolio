@@ -6,10 +6,10 @@
   "phone": "+1 (765) 615-8452",
   "linkedin": "http://www.linkedin.com/in/nguyenthaobui04",
   "github": "https://github.com/nguyenbui27",
-  "resume": "./src/resume-thao-nguyen-bui.pdf",
+  "resume": "./src/resume-thao-nguyen-bui.pdf?v=21",
   "photo": "./src/thao-nguyen-bui-photo.jpg",
   "hero": {
-    "eyebrow": "Open to SWE internships and new-grad roles",
+    "eyebrow": "Open to SWE, AI/ML & product support roles",
     "headline": "Full-stack engineer building mobile, backend, and AI-powered systems.",
     "summary": "Computer Science and Mathematics student at DePauw University with hands-on experience across React Native, TypeScript, Node APIs, Java Spring Boot, Oracle SQL, cloud tooling, and automation workflows."
   },

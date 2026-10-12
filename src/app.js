@@ -67,7 +67,7 @@ function render() {
   document.querySelector(".nav")?.remove();
   app.innerHTML = `<header class="topbar"><a class="identity" href="#home">TNB<span>Thao Nguyen Bui</span></a><nav aria-label="Portfolio destinations">${places.map((p) => `<a href="#${p.id}">${p.name}</a>`).join("")}</nav>${link(profile.resume, "Resume")}</header>
     <main class="world"><div class="world-heading"><p class="eyebrow">A LITTLE WORLD. A LOT OF POSSIBILITIES.</p><h1>Nguyen's World<span>.</span></h1><p>Full-stack engineer. Curious by nature. Builder at heart.</p></div>
-    <div class="availability"><span></span>Open to SWE internships &amp; new-grad roles</div>
+    <div class="availability"><span></span>${esc(profile.hero.eyebrow)}</div>
     <canvas id="world-canvas" tabindex="0" aria-label="Interactive portfolio world. Move with arrow keys or WASD; press Enter near a destination."></canvas>
     <div class="destinations">${places.map((p, i) => `<button class="destination" data-place="${p.id}" style="--x:${p.x}%;--y:${p.y}%;--accent:${p.color}"><span class="destination-number">0${i + 1}</span><span>${p.title}<small>${p.name}</small></span><i class="visit-mark" aria-hidden="true"></i></button>`).join("")}</div>
     <div class="world-footer"><div class="passport"><span class="passport-label">EXPLORER PASSPORT</span><div class="stamps">${places.map((p, i) => `<span data-stamp="${p.id}" title="${p.name}">0${i + 1}</span>`).join("")}</div><span id="progress" aria-live="polite"></span></div><button id="reset" title="Reset exploration">Reset journey ↺</button><span class="world-coordinate">CHICAGO, IL / SOFTWARE ENGINEERING</span></div></main>
@@ -129,7 +129,7 @@ function content(id) {
           `<section><span class="skill-number">${String(i + 1).padStart(2, "0")}</span><div><h3>${esc(category)}</h3>${tags(skills)}</div></section>`,
       )
       .join("")}</div>`;
-  return `<div class="contact-content"><p class="eyebrow">Contact</p><h2>Let's build<br>something good.</h2><p class="intro">I am based in ${esc(profile.location)} and open to internship and new-grad software engineering opportunities.</p><a class="email-link" href="mailto:${profile.email}">${esc(profile.email)} ↗</a><div class="contact-links"><a class="action primary" href="mailto:${profile.email}">Email Nguyen ↗</a>${link(profile.github, "GitHub")}${link(profile.linkedin, "LinkedIn")}${link(profile.resume, "Resume")}</div></div>`;
+  return `<div class="contact-content"><p class="eyebrow">Contact</p><h2>Let's build<br>something good.</h2><p class="intro">I am based in ${esc(profile.location)} and open to internships and entry-level roles in software engineering, AI/ML engineering, product support, and technical support.</p><a class="email-link" href="mailto:${profile.email}">${esc(profile.email)} ↗</a><div class="contact-links"><a class="action primary" href="mailto:${profile.email}">Email Nguyen ↗</a>${link(profile.github, "GitHub")}${link(profile.linkedin, "LinkedIn")}${link(profile.resume, "Resume")}</div></div>`;
 }
 function projectDetail() {
   const p = profile.projects[selectedProject];
@@ -461,7 +461,7 @@ function startWorld() {
   }
   requestAnimationFrame(frame);
 }
-fetch("./data/profile.json?v=20")
+fetch("./data/profile.json?v=21")
   .then((r) => {
     if (!r.ok) throw new Error("Profile unavailable");
     return r.json();
