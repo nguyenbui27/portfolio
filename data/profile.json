@@ -228,37 +228,89 @@
   ],
   "experience": [
     {
-      "role": "Software Engineer Intern",
-      "company": "Pay Your Tuition Foundation",
-      "dates": "Aug 2025 - Dec 2025",
-      "details": [
-        "Developed and maintained a student crowdfunding and tuition-support platform serving 2,000+ students using Webflow, Memberstack, Salesforce, Make, and REST APIs.",
-        "Built 12+ eligibility, fraud-review, approval, and reconciliation workflows with JavaScript, Salesforce, Webflow, REST APIs, and webhooks, increasing throughput from 70% to 95%.",
-        "Migrated Stripe to Razorpay for tracking $10M+ in tuition funds and stabilized JSON-based REST API integrations, reducing sync failures from 40% to 3%."
-      ],
-      "stack": ["JavaScript", "Salesforce", "Webflow", "Memberstack", "Make", "REST APIs", "Razorpay"]
-    },
-    {
       "role": "AI Agent Engineering Extern",
-      "company": "Wayfair via Extern",
+      "company": "Wayfair",
       "dates": "Jul 2026 - Sep 2026",
       "details": [
-        "Engineered a 4-agent n8n pipeline for market trend discovery, competitor intelligence, content strategy, and dashboard generation.",
-        "Built a Market Trend Discovery Agent using Mistral AI, Google Gemini, HuggingFace FLUX, Cheerio, and Google Drive APIs to detect emerging style signals.",
-        "Built a Competitor Intelligence Agent that pulled live pricing, assortment, and feature data, reducing manual competitive analysis from hours to 20 minutes per execution."
+        "Engineered a 4-agent pipeline in n8n - Market Trend Discovery, Competitor Intelligence, Content Strategy, and Dashboard Builder - using Mistral AI, Google Gemini, HuggingFace FLUX, Cheerio, and Google Drive APIs.",
+        "Built a Market Trend Discovery Agent scanning Amazon listings, Instagram, Pinterest, and design blogs to detect emerging style signals and surface micro-segments 6-12 months ahead of traditional sales data.",
+        "Built a Competitor Intelligence Agent pulling live pricing, assortment, and feature data across competitors to reduce manual competitive analysis from hours to 20 minutes per execution."
       ],
       "stack": ["n8n", "Mistral AI", "Google Gemini", "HuggingFace FLUX", "Cheerio", "Google Drive APIs"]
     },
     {
       "role": "Software Engineer Intern",
-      "company": "VietinBank",
+      "company": "Pay Your Tuition Foundation",
+      "location": "Washington, DC (US)",
+      "dates": "Aug 2025 - Dec 2025",
+      "details": [
+        "Developed and maintained a student crowdfunding and tuition-support platform serving 2,000+ students using Webflow, Memberstack, Salesforce, Make, and REST APIs to synchronize application, campaign, donor, and payment data.",
+        "Built 12+ eligibility, fraud-review, approval, and reconciliation workflows using JavaScript, Salesforce, Webflow, REST APIs, and webhooks, increasing throughput from 70% to 95% and reducing manual QA by 2+ hours daily.",
+        "Migrated Stripe to Razorpay for tracking $10M+ in tuition funds, improving webhook and payment reconciliation.",
+        "Built and stabilized REST API integrations using JSON, Salesforce, Make, and Vee AI, resolving 50+ integration issues, cutting sync failures from 40% to 3%, and automating grant summaries, donor outreach, and follow-ups."
+      ],
+      "stack": ["JavaScript", "Salesforce", "Webflow", "Memberstack", "Make", "REST APIs", "Razorpay", "JSON", "Vee AI"]
+    },
+    {
+      "role": "Software Engineer Intern",
+      "company": "Vietin Bank",
       "dates": "May 2025 - Aug 2025",
       "details": [
-        "Engineered transaction-validation and account-lookup services with Java Spring Boot, Oracle SQL, and REST APIs, enabling balance and transaction retrieval within 10 seconds.",
-        "Built a Python and SQL reconciliation pipeline to detect duplicate transactions, missing records, and balance mismatches across 50+ daily records, reducing manual review by 80%.",
-        "Developed reporting APIs and reusable data-processing modules for internal dashboards and monthly reports, reducing errors and accelerating issue investigation."
+        "Engineered transaction-validation and account-lookup services with Java Spring Boot, Oracle SQL, and REST APIs, enabling balance and transaction retrieval within 10 seconds and improving data access by 35%.",
+        "Built a Python and SQL reconciliation pipeline to detect duplicate transactions, missing records, and balance mismatches across 50+ daily records, reducing accountants' manual review workload by 80%.",
+        "Developed reporting APIs and reusable data-processing modules that delivered validated transaction and balance data to internal dashboards and monthly reports, reducing errors and accelerating issue investigation."
       ],
       "stack": ["Java", "Spring Boot", "Oracle SQL", "Python", "REST APIs"]
+    },
+    {
+      "role": "Technical Lab Assistant",
+      "company": "DePauw University",
+      "location": "Greencastle, IN",
+      "dates": "Feb 2025 - May 2025",
+      "details": [
+        "Provided 1:1 technical support to 30+ users through in-person and email channels, troubleshooting software configuration, syntax, logic, runtime, and development-environment issues while explaining fixes in clear, simple language.",
+        "Reviewed 300+ technical submissions and resolved 30+ critical issues by reproducing problems, isolating root causes, testing solutions, and guiding users through debugging so they could handle similar issues independently.",
+        "Identified recurring user problems and created reusable troubleshooting guidance and documentation, helping improve support consistency while managing multiple requests with a strong focus on urgency, accuracy, and user experience."
+      ],
+      "stack": ["Debugging", "Technical Support", "Testing", "Documentation"]
+    },
+    {
+      "role": "Software Engineer Internship",
+      "company": "Khoi Nguyen Academy",
+      "location": "Da Nang",
+      "dates": "May 2024 - Aug 2024",
+      "details": [
+        "Developed and maintained a responsive educational platform using HTML, CSS, and JavaScript, improving accessibility by 20% and creating a smoother experience for both students and instructors.",
+        "Built real-time homework and exam update features used by 300+ users, helping students receive academic information faster and contributing to a 30% increase in platform engagement.",
+        "Debugged and resolved 10+ critical issues across frontend behavior, user interactions, and application logic, improving platform stability and reducing disruptions for users.",
+        "Participated in 15+ peer code reviews, reviewing implementation logic, identifying potential issues, and incorporating feedback to improve code quality and maintainability.",
+        "Worked closely with other engineers to test new functionality, reproduce reported issues, and refine features based on user needs, gaining hands-on experience with the full software development lifecycle."
+      ],
+      "stack": ["HTML", "CSS", "JavaScript", "Debugging", "Code Review", "Testing"]
+    },
+    {
+      "role": "Vice President",
+      "company": "Vietnamese Student Association - DePauw University",
+      "location": "Greencastle, IN (US)",
+      "dates": "Jun 2023 - May 2024",
+      "details": [
+        "Coordinated 8+ multicultural events for 500+ attendees, working with students, university departments, and external partners while managing schedules, logistics, last-minute changes, and on-site issues.",
+        "Managed budgeting, expense tracking, and fundraising while helping increase organization membership by 30%.",
+        "Created Excel-based reports, presentations, and leadership updates to summarize event performance, budgets, and organizational activities, communicating progress, issues, and next steps clearly across different stakeholders."
+      ],
+      "stack": ["Excel", "Budgeting", "Event Coordination", "Leadership", "Stakeholder Communication"]
+    },
+    {
+      "role": "Computer Science Teaching Assistant",
+      "company": "Khoi Nguyen Academy",
+      "location": "Da Nang",
+      "dates": "May 2023 - Aug 2023",
+      "details": [
+        "Supported 200+ students in introductory Python and Java courses, debugging code and explaining data structures, OOP, algorithms, and core programming concepts, contributing to a 30% improvement in assignment completion rates.",
+        "Led coding support and debugging sessions that helped students identify logic, syntax, and runtime errors independently, reducing repeated programming questions by 80% across the course.",
+        "Collaborated with instructors to design, test, and grade 300+ programming assignments and projects, improving grading consistency and reducing assignment turnaround time by 50%."
+      ],
+      "stack": ["Python", "Java", "Data Structures", "OOP", "Algorithms", "Debugging"]
     }
   ],
   "skills": {

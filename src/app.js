@@ -119,7 +119,7 @@ function content(id) {
   if (id === "projects")
     return `<p class="eyebrow">Selected Work</p><h2>Things I've built.</h2><div class="project-selector" role="tablist" aria-label="Projects">${profile.projects.map((p, i) => `<button role="tab" id="project-tab-${i}" aria-controls="project-detail" aria-selected="${i === selectedProject}" tabindex="${i === selectedProject ? 0 : -1}" data-project="${i}">${esc(p.name)}</button>`).join("")}</div><div id="project-detail" role="tabpanel" aria-labelledby="project-tab-${selectedProject}">${projectDetail()}</div>`;
   if (id === "experience")
-    return `<p class="eyebrow">Experience</p><h2>Building in the real world.</h2><div class="timeline">${profile.experience.map((e, i) => `<article><div class="timeline-date"><span>0${i + 1}</span>${esc(e.dates)}</div><div><p class="company">${esc(e.company)}</p><h3>${esc(e.role)}</h3><ul>${e.details.map((d) => `<li>${esc(d)}</li>`).join("")}</ul>${tags(e.stack)}</div></article>`).join("")}</div>`;
+    return `<p class="eyebrow">Experience</p><h2>Building in the real world.</h2><div class="timeline">${profile.experience.map((e, i) => `<article><div class="timeline-date"><span>0${i + 1}</span>${esc(e.dates)}</div><div><p class="company">${esc(e.company)}${e.location ? `<span class="experience-location">${esc(e.location)}</span>` : ""}</p><h3>${esc(e.role)}</h3><ul>${e.details.map((d) => `<li>${esc(d)}</li>`).join("")}</ul>${tags(e.stack)}</div></article>`).join("")}</div>`;
   if (id === "skills")
     return `<p class="eyebrow">Technical Stack</p><h2>My builder's toolkit.</h2><div class="skill-list">${Object.entries(
       profile.skills,
@@ -442,7 +442,7 @@ function startWorld() {
   }
   requestAnimationFrame(frame);
 }
-fetch("./data/profile.json?v=18")
+fetch("./data/profile.json?v=19")
   .then((r) => {
     if (!r.ok) throw new Error("Profile unavailable");
     return r.json();
