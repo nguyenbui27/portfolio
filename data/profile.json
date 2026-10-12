@@ -164,7 +164,7 @@
       "link": "https://github.com/nguyenbui27/Neural-Network-Character-Recognition",
       "media": {
         "type": "video",
-        "src": "./src/assets/character-recognition.mp4"
+        "src": "./src/assets/character-recognition.mp4?v=20261012-1805"
       },
       "summary": "Rebuilt a Java/BlueJ handwriting recognizer in Python and TensorFlow to identify handwritten digits 0–9. A colorful pixel-themed browser interface lets users draw with a mouse or touch, recognize the number, and clear the canvas; predictions run locally using a saved CNN model.",
       "impact": [
