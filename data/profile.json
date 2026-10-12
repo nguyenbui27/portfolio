@@ -162,6 +162,8 @@
       "type": "AI + Computer Vision",
       "status": "Independent project",
       "link": "https://github.com/nguyenbui27/Neural-Network-Character-Recognition",
+      "demo": "https://nguyenbui27.github.io/Neural-Network-Character-Recognition/",
+      "demoLabel": "Playable game",
       "media": {
         "type": "video",
         "src": "./src/assets/character-recognition.mp4?v=20261012-1805"
