@@ -504,6 +504,28 @@ figcaption {
   padding: 28px 0;
   border-top: 1px solid #263e3926;
 }
+[hidden] {
+  display: none !important;
+}
+.skill-search {
+  width: 100%;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 14px;
+  background: #fff;
+  color: #263e39;
+  border: 1px solid #263e3960;
+  border-radius: 4px;
+}
+.skill-search:focus-visible {
+  outline: 3px solid #d73b8c;
+  outline-offset: 2px;
+}
+.skill-results {
+  font-size: 12px;
+  min-height: 21px;
+  margin: 8px 0;
+}
 .skill-number {
   font:
     24px "Space Grotesk",

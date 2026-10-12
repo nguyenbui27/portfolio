@@ -121,12 +121,12 @@ function content(id) {
   if (id === "experience")
     return `<p class="eyebrow">Experience</p><h2>Building in the real world.</h2><div class="timeline">${profile.experience.map((e, i) => `<article><div class="timeline-date"><span>0${i + 1}</span>${esc(e.dates)}</div><div><p class="company">${esc(e.company)}${e.location ? `<span class="experience-location">${esc(e.location)}</span>` : ""}</p><h3>${esc(e.role)}</h3><ul>${e.details.map((d) => `<li>${esc(d)}</li>`).join("")}</ul>${tags(e.stack)}</div></article>`).join("")}</div>`;
   if (id === "skills")
-    return `<p class="eyebrow">Technical Stack</p><h2>My builder's toolkit.</h2><div class="skill-list">${Object.entries(
+    return `<p class="eyebrow">Technical Stack</p><h2>My builder's toolkit.</h2><input id="skill-search" class="skill-search" type="search" aria-label="Search skills" placeholder="Search skills"><p id="skill-results" class="skill-results" aria-live="polite"></p><div class="skill-list">${Object.entries(
       profile.skills,
     )
       .map(
         ([category, skills], i) =>
-          `<section><span class="skill-number">0${i + 1}</span><div><h3>${esc(category)}</h3>${tags(skills)}</div></section>`,
+          `<section><span class="skill-number">${String(i + 1).padStart(2, "0")}</span><div><h3>${esc(category)}</h3>${tags(skills)}</div></section>`,
       )
       .join("")}</div>`;
   return `<div class="contact-content"><p class="eyebrow">Contact</p><h2>Let's build<br>something good.</h2><p class="intro">I am based in ${esc(profile.location)} and open to internship and new-grad software engineering opportunities.</p><a class="email-link" href="mailto:${profile.email}">${esc(profile.email)} ↗</a><div class="contact-links"><a class="action primary" href="mailto:${profile.email}">Email Nguyen ↗</a>${link(profile.github, "GitHub")}${link(profile.linkedin, "LinkedIn")}${link(profile.resume, "Resume")}</div></div>`;
@@ -194,6 +194,25 @@ function open(id) {
     document.querySelector("dialog").showModal();
   document.querySelector("#detail-content").scrollTop = 0;
   if (id === "projects") wireProjects();
+  if (id === "skills") wireSkillSearch();
+}
+function wireSkillSearch() {
+  document.querySelector("#skill-search").addEventListener("input", (event) => {
+    const query = event.target.value.trim().toLowerCase();
+    let matches = 0;
+    document.querySelectorAll(".skill-list section").forEach((section) => {
+      const categoryMatch = section.querySelector("h3").textContent.toLowerCase().includes(query);
+      let visible = 0;
+      section.querySelectorAll(".tags span").forEach((tag) => {
+        const match = categoryMatch || tag.textContent.toLowerCase().includes(query);
+        tag.hidden = !match;
+        if (match) visible++;
+      });
+      section.hidden = visible === 0;
+      matches += visible;
+    });
+    document.querySelector("#skill-results").textContent = query ? `${matches} ${matches === 1 ? "match" : "matches"}` : "";
+  });
 }
 function close() {
   document.querySelectorAll("dialog video").forEach((v) => v.pause());
@@ -442,7 +461,7 @@ function startWorld() {
   }
   requestAnimationFrame(frame);
 }
-fetch("./data/profile.json?v=19")
+fetch("./data/profile.json?v=20")
   .then((r) => {
     if (!r.ok) throw new Error("Profile unavailable");
     return r.json();

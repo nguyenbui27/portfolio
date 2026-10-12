@@ -314,9 +314,44 @@
     }
   ],
   "skills": {
-    "Programming Languages": ["Java", "Python", "C++", "JavaScript", "TypeScript", "SQL", "R", "HTML/CSS"],
-    "Frameworks & Libraries": ["React", "React Native", "Node.js", "Express.js", "Spring Boot", "Axios", "AWT", "Firebase"],
-    "Databases": ["MongoDB", "PostgreSQL", "Oracle SQL", "MySQL", "SQLite"],
-    "Tools & Services": ["Git", "AWS", "GCP", "Azure", "WebSocket", "Salesforce", "Webflow", "Razorpay", "Linux/Unix", "TensorFlow"]
+    "Programming Languages": [
+      "Java", "Python", "C", "C++", "JavaScript", "TypeScript", "SQL", "R", "Kotlin", "HTML/CSS"
+    ],
+    "Frameworks & Libraries": [
+      "React", "React Native", "Node.js", "Express.js", "Spring Boot", "FastAPI", "Axios", "AWT", "Firebase", "TensorFlow", "SQLAlchemy", "Alembic", "Recoil", "AsyncStorage", "React Native Maps", "Cheerio"
+    ],
+    "Databases & Backend Engineering": [
+      "MongoDB", "PostgreSQL", "Oracle SQL", "MySQL", "SQLite", "REST APIs", "API Integration", "JSON", "WebSocket", "Webhooks", "API Endpoint Development", "Presigned Uploads", "File Verification", "Ownership Validation", "Transactional Database Operations", "Database Modeling", "Database Migrations", "Reporting APIs", "Data Processing", "Data Pipelines", "Data Synchronization", "Data Mapping", "Transaction Validation", "Account Lookup", "Data Validation", "Reconciliation Pipelines", "Data Accuracy"
+    ],
+    "Cloud, Systems & Deployment": [
+      "AWS", "GCP (Google Cloud Platform)", "Azure", "Docker", "Linux/Unix", "Amazon S3", "IAM", "Least-Privilege Access", "Amazon ECR", "Amazon ECS", "AWS Fargate", "Application Load Balancer (ALB)", "Health Checks", "Amazon CloudWatch", "AWS Amplify", "Containerization", "Container Orchestration", "Cloud Architecture", "Logging"
+    ],
+    "AI, Agents & Automation": [
+      "ChatGPT", "Google Gemini", "Mistral AI", "HuggingFace FLUX", "Vee AI", "n8n", "Make", "AI Agent Engineering", "Multi-Agent Pipelines", "Prompt Engineering", "Agent Handoffs", "Model Output Evaluation", "AI-Assisted Workflows", "Workflow Automation", "AI Chatbots", "Automated Reporting", "Grant Summary Automation", "Donor Outreach Automation", "Follow-Up Automation"
+    ],
+    "Mobile & Software Architecture": [
+      "Android Development", "Mobile Development", "Full-Stack Development", "Modular Architecture", "Centralized Service Layers", "State Management", "Location Tracking", "Guardian Management", "Emergency Communication", "Emergency Alerts", "Software Maintenance"
+    ],
+    "Blockchain & Verification": [
+      "Blockchain", "Polygon", "SHA-256 Fingerprints", "Immutable Proofs", "Evidence Verification", "Tamper Detection", "Smart Contracts", "Smart-Contract Testing"
+    ],
+    "Platforms & Payment Operations": [
+      "Salesforce", "Webflow", "Memberstack", "Stripe", "Razorpay", "Payment Processing", "Payment Migration", "Payment Reconciliation", "Webhook Reliability", "Transaction Visibility", "Student Funding Workflows", "Eligibility Workflows", "Fraud Review", "Approval Workflows"
+    ],
+    "Product & Market Intelligence": [
+      "Product Operations", "Product Thinking", "User & Workflow Analysis", "Experimentation", "Prioritization", "Data Analysis", "User Research", "Roadmapping", "Process Improvement", "Market Research", "Product Requirements", "Workflow Design", "Information Flows", "Market Trend Discovery", "Competitor Intelligence", "Competitor Monitoring", "Content Strategy", "Dashboard Building", "Market Segmentation", "Trend Signal Detection", "Product Data Analysis", "Pricing Analysis", "Review Analysis", "Social Data Analysis", "Amazon Listings Research", "Instagram Research", "Pinterest Research", "Design Blog Research", "Business Insights", "Output Quality Evaluation", "Product Iteration", "Operational Bottleneck Analysis"
+    ],
+    "Technical Support, Debugging & Quality": [
+      "End-User Support", "Technical Support", "Software Troubleshooting", "Root-Cause Analysis", "Issue Triage", "Configuration Troubleshooting", "Bug Reproduction", "User Training", "Technical Documentation", "Escalation Support", "Debugging", "Syntax Error Diagnosis", "Logic Error Diagnosis", "Runtime Error Diagnosis", "Development-Environment Troubleshooting", "API Response Analysis", "Request Tracing", "Data-Flow Troubleshooting", "Integration Troubleshooting", "Webhook Troubleshooting", "Payment Troubleshooting", "Event Data Validation", "Reproduction Steps", "Expected vs. Actual Behavior", "Resolution Documentation", "Reusable Troubleshooting Guidance", "Edge-Case Testing", "Automated Backend Testing", "Manual QA", "Automated Validation Checks", "Issue Investigation", "Output Consistency", "Support Prioritization"
+    ],
+    "Developer Tools": [
+      "Git", "GitHub", "GitHub Copilot", "OpenAI Codex", "Claude Code", "Visual Studio Code", "IntelliJ IDEA"
+    ],
+    "Productivity, Collaboration & Leadership": [
+      "Microsoft 365", "Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint", "Microsoft Outlook", "Google Workspace", "Google Drive APIs", "Cross-Functional Collaboration", "Technical Communication", "Stakeholder Communication", "Team Coordination", "Partner Coordination", "Budget Management", "Event Planning", "Event Logistics", "Membership Growth", "Leadership", "Public Relations", "User Experience"
+    ],
+    "Computer Science & Mathematics": [
+      "Object-Oriented Programming", "Data Structures & Algorithms", "Database and File Systems", "Computer Systems", "Statistical Computing", "Linear Algebra"
+    ]
   }
 }
