@@ -160,24 +160,30 @@
     {
       "name": "Neural Network Character Recognition",
       "type": "AI + Computer Vision",
-      "status": "Independent project",
-      "link": "#projects",
+      "status": "Independent project · Updated October 12, 2026",
+      "link": "https://github.com/nguyenbui27/Neural-Network-Character-Recognition",
       "media": {
         "type": "video",
         "src": "./src/assets/character-recognition.mp4"
       },
-      "summary": "Handwriting recognition system built with convolutional neural networks and real-time training feedback.",
+      "summary": "Rebuilt a Java/BlueJ handwriting recognizer in Python and TensorFlow to identify handwritten digits 0–9. A colorful pixel-themed browser interface lets users draw with a mouse or touch, recognize the number, and clear the canvas; predictions run locally using a saved CNN model.",
       "impact": [
-        "Created a handwriting recognition system achieving 89% accuracy using convolutional neural networks.",
-        "Processed 8,000+ handwritten samples with image preprocessing and normalization techniques.",
-        "Built a training interface with real-time accuracy monitoring and performance visualization."
+        "Trained on 10,000 MNIST images, validated on 2,000 separate images, and evaluated on 10,000 held-out test images: 22,000 handwritten samples processed across disjoint splits.",
+        "Achieved 97.36% test accuracy (9,736 of 10,000 digits correct) and 96.95% validation accuracy after 5 epochs, exceeding the original 89% target by 8.36 percentage points. Test cross-entropy loss: 0.0843.",
+        "Created a shared image-processing pipeline for dataset images and user drawings: grayscale conversion, ink cropping, aspect-preserving resizing to 20×20, center-of-mass alignment on a 28×28 canvas, and normalization to [0, 1].",
+        "Built a CNN with 32- and 64-filter convolutional layers, max pooling, a 64-unit dense layer, 30% dropout, and a 10-class softmax output; trained with Adam using batches of 128 images.",
+        "Saved the model and evaluation report with per-epoch accuracy/loss, a 10×10 confusion matrix, and per-digit precision/recall. Passed 8 automated tests covering preprocessing, request validation, saved-model loading, and inference.",
+        "Accuracy was measured on unseen MNIST test digits; results on new mouse-drawn handwriting can vary. Training and detailed evaluation remain available through the Python command-line tooling."
       ],
       "stack": [
         "Python",
-        "TensorFlow",
+        "TensorFlow / Keras",
+        "NumPy",
+        "Pillow",
+        "JavaScript",
+        "HTML / CSS",
         "CNN",
         "Image Preprocessing",
-        "Computer Vision",
         "Model Evaluation"
       ],
       "accent": "rose"
