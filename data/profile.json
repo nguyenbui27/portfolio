@@ -230,6 +230,35 @@
         "Prompt Engineering"
       ],
       "accent": "amber"
+    },
+    {
+      "name": "Avoid the Enemies",
+      "type": "Browser Game + Game Systems",
+      "status": "Independent project",
+      "link": "https://github.com/nguyenbui27/avoid_the_enemies",
+      "demo": "https://nguyenbui27.github.io/avoid_the_enemies/",
+      "media": {
+        "type": "video",
+        "src": "./src/assets/avoid-the-enemies-demo.mp4"
+      },
+      "summary": "A full-window pixel-art survival game built with React and TypeScript. Players choose a character and dodge incoming enemies through three increasingly fast levels using keyboard, mouse, or touch controls. The repository also includes the original Java Swing game.",
+      "impact": [
+        "Implemented 3 playable avatars, 3 difficulty settings, and 3 levels with enemy speed increasing by 17% per level relative to the first level.",
+        "Made enemy counts configurable from 1 to 1,000 per level. The default 15-enemy setting requires 45 dodges across a complete run, with 100 points per enemy and a maximum default score of 4,500.",
+        "Separated the game engine from SVG rendering and React controls; verified collision boundaries, pause/resume, collision loss, three-level victory, and movement/reset with 5 automated tests."
+      ],
+      "stack": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "SVG",
+        "CSS",
+        "Node.js",
+        "GitHub Actions",
+        "Java",
+        "Swing"
+      ],
+      "accent": "rose"
     }
   ],
   "experience": [
