@@ -463,7 +463,7 @@ function startWorld() {
   }
   requestAnimationFrame(frame);
 }
-fetch("./data/profile.json?v=23")
+fetch("./data/profile.json?v=24")
   .then((r) => {
     if (!r.ok) throw new Error("Profile unavailable");
     return r.json();
