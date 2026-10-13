@@ -114,9 +114,8 @@
       "status": "Independent project",
       "link": "https://github.com/nguyenbui27/Space-Station-Rescue-Simulator",
       "media": {
-        "type": "image",
-        "src": "./src/assets/space-station-rescue.jpg",
-        "alt": "Space Station Rescue Simulator pixel game showing the shuttle, station, fuel counter, and touch controls."
+        "type": "video",
+        "src": "./src/assets/space-station-rescue-demo.mp4"
       },
       "summary": "Extended a Java/BlueJ space-station simulator into a basic pixel rescue game while preserving all original source classes. Added a browser edition where players aim fuel cells ahead of a moving station, manage a limited supply, and complete three increasingly fast deliveries.",
       "impact": [
@@ -132,8 +131,7 @@
         "HTML5 Canvas",
         "HTML/CSS",
         "Pointer Events",
-        "Node.js",
-        "GitHub Pages"
+        "Node.js"
       ],
       "accent": "blue",
       "demo": "https://nguyenbui27.github.io/Space-Station-Rescue-Simulator/",
