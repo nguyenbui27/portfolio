@@ -117,11 +117,11 @@
         "type": "video",
         "src": "./src/assets/space-station-rescue-demo.mp4"
       },
-      "summary": "Extended a Java/BlueJ space-station simulator into a basic pixel rescue game while preserving all original source classes. Added a browser edition where players aim fuel cells ahead of a moving station, manage a limited supply, and complete three increasingly fast deliveries.",
+      "summary": "Built a basic pixel rescue game where players aim fuel cells ahead of a moving space station, manage a limited supply, and complete three increasingly fast deliveries. Includes a playable browser edition and a Java desktop edition.",
       "impact": [
         "Built 3 rescue rounds and 3 difficulty settings on an 800 × 600 playfield, with keyboard and touch controls, pause/resume, restart, and optional fullscreen.",
         "Implemented a 5-cell capacity, a 2-cell reward after successful deliveries, and round-weighted scoring with an 840-point maximum for three first-shot deliveries.",
-        "Verified the browser engine with 13 passing automated tests covering launch limits, movement bounds, pause/resume, collision detection, rewards, scoring, victory, loss, and restart; preserved all 9 original Java source files unchanged."
+        "Verified the browser engine with 13 passing automated tests covering launch limits, movement bounds, pause/resume, collision detection, rewards, scoring, victory, loss, and restart."
       ],
       "stack": [
         "Java",
@@ -247,7 +247,7 @@
         "type": "video",
         "src": "./src/assets/avoid-the-enemies-demo.mp4"
       },
-      "summary": "A full-window pixel-art survival game built with React and TypeScript. Players choose a character and dodge incoming enemies through three increasingly fast levels using keyboard, mouse, or touch controls. The repository also includes the original Java Swing game.",
+      "summary": "A full-window pixel-art survival game built with React and TypeScript. Players choose a character and dodge incoming enemies through three increasingly fast levels using keyboard, mouse, or touch controls.",
       "impact": [
         "Implemented 3 playable avatars, 3 difficulty settings, and 3 levels with enemy speed increasing by 17% per level relative to the first level.",
         "Made enemy counts configurable from 1 to 1,000 per level. The default 15-enemy setting requires 45 dodges across a complete run, with 100 points per enemy and a maximum default score of 4,500.",
