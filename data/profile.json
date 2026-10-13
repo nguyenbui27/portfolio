@@ -110,28 +110,34 @@
     },
     {
       "name": "Space Station Rescue Simulator",
-      "type": "Simulation + Game Systems",
+      "type": "Pixel Game + Object-Oriented Simulation",
       "status": "Independent project",
-      "link": "#projects",
+      "link": "https://github.com/nguyenbui27/Space-Station-Rescue-Simulator",
       "media": {
-        "type": "video",
-        "src": "./src/assets/space-station-rescue.mp4"
+        "type": "image",
+        "src": "./src/assets/space-station-rescue.jpg",
+        "alt": "Space Station Rescue Simulator pixel game showing the shuttle, station, fuel counter, and touch controls."
       },
-      "summary": "2D orbital rescue simulator with moving objects, space stations, collision detection, and modular mission logic.",
+      "summary": "Extended a Java/BlueJ space-station simulator into a basic pixel rescue game while preserving all original source classes. Added a browser edition where players aim fuel cells ahead of a moving station, manage a limited supply, and complete three increasingly fast deliveries.",
       "impact": [
-        "Built Java Swing/AWT rendering and controls for 5+ stations and 20+ moving objects.",
-        "Used spatial hashing to improve debris interaction performance by about 30%.",
-        "Applied Command and State patterns to simplify level integration."
+        "Built 3 rescue rounds and 3 difficulty settings on an 800 × 600 playfield, with keyboard and touch controls, pause/resume, restart, and optional fullscreen.",
+        "Implemented a 5-cell capacity, a 2-cell reward after successful deliveries, and round-weighted scoring with an 840-point maximum for three first-shot deliveries.",
+        "Verified the browser engine with 13 passing automated tests covering launch limits, movement bounds, pause/resume, collision detection, rewards, scoring, victory, loss, and restart; preserved all 9 original Java source files unchanged."
       ],
       "stack": [
         "Java",
         "Swing",
         "AWT",
-        "Spatial Hashing",
-        "Command Pattern",
-        "State Pattern"
+        "JavaScript",
+        "HTML5 Canvas",
+        "HTML/CSS",
+        "Pointer Events",
+        "Node.js",
+        "GitHub Pages"
       ],
-      "accent": "blue"
+      "accent": "blue",
+      "demo": "https://nguyenbui27.github.io/Space-Station-Rescue-Simulator/",
+      "demoLabel": "Play game"
     },
     {
       "name": "Tiger Cub",

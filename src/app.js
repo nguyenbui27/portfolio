@@ -133,7 +133,9 @@ function content(id) {
 }
 function projectDetail() {
   const p = profile.projects[selectedProject];
-  const media = p.media
+  const media = p.media?.type === "image"
+    ? `<img src="${esc(p.media.src)}" alt="${esc(p.media.alt || p.name)}" loading="lazy">`
+    : p.media
     ? `<video src="${p.media.src}" controls muted autoplay loop playsinline preload="metadata" aria-label="${esc(p.name)} demo"></video>`
     : `<div class="project-art ${selectedProject === 0 ? "vault" : "algorithm"}" aria-hidden="true"><span>${selectedProject === 0 ? "[ SHA-256 ]" : selectedProject === 5 ? "1  2  3<br>4  5  6<br>7  8  9" : "{ hello }"}</span><small>${esc(p.type)}</small></div>`;
   return `<div class="project-layout"><div class="project-media">${media}</div><div><p class="project-meta">${esc(p.status)} / ${esc(p.type)}</p><h3>${esc(p.name)}</h3><p>${esc(p.summary)}</p><ul>${p.impact.map((d) => `<li>${esc(d)}</li>`).join("")}</ul>${tags(p.stack)}<div class="project-links">${p.link?.startsWith("https://") ? link(p.link, "GitHub link") : ""}${p.demo ? link(p.demo, p.demoLabel || "Play game") : ""}${p.paper ? link(p.paper, "Read paper") : ""}</div></div></div>`;
